@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import Title from './Title'
 import Welcome from './Welcome'
+import TaskList from './Tasklist'
 
 function App() {
   const [start, setStart] = useState(false)
@@ -10,8 +10,9 @@ function App() {
           !start && <Welcome startOnClick={setStart} />
         }
         {
-          start && <Title></Title>
+          start && <TaskList />
         }
+        
     </>
   )
 }
