@@ -1,7 +1,7 @@
-// TaskList.jsx
 import React, { useState, useEffect } from 'react';
 import MyForm from './MyForm';
 import Task from './Task';
+import './styles.css';
 
   const TaskList = () => {
     const [tasks, setTasks] = useState([
